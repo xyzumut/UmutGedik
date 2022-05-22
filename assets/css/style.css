@@ -1,0 +1,405 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: gray;
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* Sol konteynır Genel stilleri */
+#left-container{
+    width: 25vw;
+    height: 100vh;
+    background-color: #434244;
+    color: #BBBCBE;
+    font-size: 18px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#left-container .left-container-item{
+    width: 90%;
+    margin: 5px auto;
+    display: flex;
+    padding: 10px;
+}
+
+    /* Profil resmi stilleri */
+#left-container #profile-photo{
+    width: 170px;
+    height: 170px;
+    border-radius: 100%;
+    margin: 5px auto;
+}
+#left-container #profile-photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+
+    /* Contact Stilleri */
+#left-container .contact{
+    padding: 10px 5px;
+    flex-direction: column;
+    align-items: center;
+}
+#left-container .contact .contact-item{
+    width: 100%;
+    padding: 3px;
+    height: auto;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    margin: 7px 0;
+}
+#left-container .contact .contact-item .adress{
+    font-size: 14px;
+}
+#left-container .contact .contact-item i{
+    margin-right: 30px;
+    color: white;
+}
+
+    /* Links Stilleri */
+
+#left-container .links{ 
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#left-container .links .links-header{
+    width: 100%;
+    font-size: 30px;
+    color: #ddd4ce;
+    margin-bottom: 10px;
+    position: relative;
+}
+#left-container .links .links-header:after{
+    content: '';
+    position: relative;
+    width: 50%;
+    height: 1px;
+    background-color: #ddd4ce;
+    display: block;
+    margin: 5px 0;
+}
+#left-container .links .links-item{
+    margin-top: 15px;
+    width: 30%;
+    margin-right: 15px;
+}
+#left-container .links .links-item a{
+    color: #BBBCBE;
+    text-decoration: none;
+    margin-left: 10px;
+    border-bottom: 1px solid #BBBCBE;
+    transition: .5s all ease;
+}
+#left-container .links .links-item a:hover{
+    color: white;
+    border-bottom-color: white;
+    text-shadow: 0 0 15px white;
+}
+#left-container .links .links-item i{
+    color: white;
+}
+
+    /* Skills Stilleri*/
+
+#left-container .skills{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+#left-container .skills .skills-header{
+    width: 100%;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #ddd4ce;
+    position: relative;
+}
+#left-container .skills .skills-header::after{
+    content: '';
+    position: relative;
+    width: 50%;
+    height: 1px;
+    background-color: #ddd4ce;
+    display: block;
+    margin: 5px 0;
+}
+#left-container .skills p{
+    width: 33%;
+    margin: 10px 0;
+}
+
+    /* Language stilleri */
+
+#left-container .language{
+    flex-direction: column;
+}
+#left-container .language .language-header{
+    width: 100%;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #ddd4ce;
+    position: relative;
+}
+#left-container .language .language-header::after{
+    content: '';
+    position: relative;
+    width: 50%;
+    height: 1px;
+    background-color: #ddd4ce;
+    display: block;
+    margin: 5px 0;
+}
+
+
+/* Sol konteynır Genel stilleri */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+#main-header{
+    width: 70vw;
+    height: 200px;
+    position: fixed;
+    top: 10px;
+    right: 2.5vw;
+    background-color: #434244;
+    padding-left: 100px;
+}
+#main-header h1{
+    font-size: 80px;
+    line-height: 200px;
+    color: #ddd4ce;
+}
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+#main{
+    width: 70vW;
+    height: 500px;
+    position: absolute;
+    bottom: 10px;
+    right: 2.5vw;
+    overflow: hidden;
+}
+.main-container{
+    width: 500%;
+    height: 500%;
+    display: flex;
+}
+#main .main-menu{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #434244;
+}
+#main .main-menu .main-menu-item{
+    font-size: 25px;
+    line-height: 50px;
+    cursor: pointer;
+    transition: .5s all ease-in-out;
+    border-bottom: 1px solid #434244;
+    color: #ddd4ce;
+}
+#main  .main-menu .main-menu-aktif{
+    border-bottom: 1px solid #ddd4ce;
+    color: #ddd4ce;
+    text-shadow: 0 0 5px #ddd4ce;
+}
+#main .ileri,#main .geri{
+    width: 40px;
+    height: 150px;
+    background-color: gray;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #ddd4ce;
+    transition: .5s all ease-in-out;
+}
+#main .ileri:hover,#main .geri:hover{
+    color:gray ;
+    background-color: #ddd4ce;
+}
+#main .ileri{
+    right: 0;
+}
+#main .iconify{
+    font-size: 40px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#main .main-container .page{
+    width: 20%;
+    height: 450px;
+    transition: 1s all ease-in-out;
+    position: relative;
+    left: 0;
+    background-color: #434244;
+}
+
+/* page1 */
+
+#main .main-container .page-1{
+    font-size: 20px;
+    text-align: start;
+    padding: 50px 70px 0 70px ;
+    color: #BBBCBE;
+}
+#main .main-container .page-1 p{
+    margin: 20px 0;
+    line-height: 30px;
+}
+/* page2 */
+#main .main-container .page-2{
+    padding: 30px 70px 0 70px ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+#main .main-container .page-2 .egitim-card{
+    width: 400px;
+    min-height: 150px;
+    margin-right: 20px;
+    position: relative;
+    padding: 10px;
+    background-color: #6f6b68;
+    border-radius: 10px;
+    color: #ddd4ce;
+}
+#main .main-container .page-2 .egitim-card .kurumAdi{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+#main .main-container .page-2 .egitim-card .bolum{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+#main .main-container .page-2 .egitim-card .duzey{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+}
+#main .main-container .page-2 .egitim-card .tarih{
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+#main .main-container .page-2 .egitim-card .aciklama{
+    font-size: 16px;
+}
+
+/* page3 */
+
+#main .main-container .page-3{
+    padding: 30px 50px 0 50px ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    color: #ddd4ce;
+}
+#main .main-container .page-3 .page3-card{
+    width: 420px;
+    height: 200px;
+    padding: 10px;
+    background-color: #6f6b68;
+    border-radius: 10px;
+    position: relative;
+}
+#main .main-container .page-3 .page3-card .kurumAdi{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+#main .main-container .page-3 .page3-card .pozisyon{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+}
+#main .main-container .page-3 .page3-card .tarih{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+#main .main-container .page-3 .page3-card p{
+    line-height: 30px;
+}
+/* #main .main-container .page-3 .page3-card */
+
+#main .main-container .page-4{
+    padding: 50px;
+}
+
+#main .main-container .page-4 .page4-img{
+    position: relative;
+    transition: .5s all ease-in-out;
+    width: 400px;
+}
+#main .main-container .page-4 .page4-img img{
+    width: 100%;
+}
+#main .main-container .page-4 .page4-img .iconify-film{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 70px;
+    color: white;
+    animation : film-icon 1.5s ease-in-out  infinite;
+    cursor: all-scroll;
+}
+#main .main-container .page-4 .page4-img:hover{
+    filter: brightness(.8)
+}
+@keyframes film-icon {
+    0%{
+        opacity: .2;
+    }
+    50%{
+        opacity: .8;
+    }
+    200%{
+        opacity: .2;
+    }
+}
+#main .main-container .page-4 .page4-img .full{
+    width: calc(70vw - 100px);
+    height: 400px;
+    position: absolute;
+    top: 80%;
+    transform: translateY(-50%);
+    background-color: #434244;
+    z-index: 1000;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow-y: auto;
+    display: none;
+}
+
+#main .main-container .page-4 .page4-img .full img{
+    width: 34%;
+    margin:20px;
+    box-shadow: 0 0 5px 5px #97918d;
+}
+.exit{
+    font-size: 20px !important;
+    color:#ddd4ce;
+    position: absolute;
+    top: -45px;
+    padding: 2px 5px;
+    border: 1px solid #ddd4ce;
+    border-radius: 100%;
+    z-index: 100;
+    cursor: pointer;
+    display: none;
+}
